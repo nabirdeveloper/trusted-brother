@@ -4,7 +4,7 @@
   "rsc": true,
   "tsx": true,
   "tailwind": {
-    "config": "",
+    "config": "tailwind.config.ts",
     "css": "app/globals.css",
     "baseColor": "neutral",
     "cssVariables": true,
@@ -13,61 +13,7 @@
   "aliases": {
     "components": "@/components",
     "utils": "@/lib/utils",
-    "ui": "@/components/ui",
-    "lib": "@/lib",
-    "hooks": "@/hooks"
+    "ui": "@/components/ui"
   },
   "iconLibrary": "lucide"
-
-
-  "icons": {
-    "add": "lucide-plus",
-    "remove": "lucide-minus",
-    "edit": "lucide-edit",
-    "delete": "lucide-trash-2",
-    "search": "lucide-search",
-    "settings": "lucide-settings"
-  },
-},
-  "components": [
-    {
-      "name": "Button",
-      "path": "ui/button.tsx",
-      "description": "A customizable button component.",
-      "props": {
-        "variant": {
-          "type": "string",
-          "default": "default",
-          "description": "The variant of the button."
-        },
-        "size": {
-          "type": "string",
-          "default": "md",
-          "description": "The size of the button."
-        },
-        "disabled": {
-          "type": "boolean",
-          "default": false,
-          "description": "Whether the button is disabled."
-        }
-      }
-    },
-    {
-      "name": "Input",
-      "path": "ui/input.tsx",
-      "description": "A customizable input component.",
-      "props": {
-        "placeholder": {
-          "type": "string",
-          "default": "",
-          "description": "Placeholder text for the input."
-        },
-        "disabled": {
-          "type": "boolean",
-          "default": false,
-          "description": "Whether the input is disabled."
-        }
-      }
-    }
-  ]
 }

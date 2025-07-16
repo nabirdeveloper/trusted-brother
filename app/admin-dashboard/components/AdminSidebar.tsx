@@ -1,7 +1,7 @@
 "use client";
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { FaBox, FaClipboardList, FaUsers, FaTags, FaChartBar, FaCog, FaSignOutAlt, FaTachometerAlt, FaStore } from 'react-icons/fa';
+import { FaBox, FaClipboardList, FaUsers, FaTags, FaChartBar, FaCog, FaSignOutAlt, FaTachometerAlt, FaStore, FaImages, FaPhotoVideo } from 'react-icons/fa';
 
 const navLinks = [
   { href: '/admin-dashboard', label: 'Dashboard', icon: <FaTachometerAlt /> },
@@ -10,6 +10,8 @@ const navLinks = [
   { href: '/admin-dashboard/customers', label: 'Customers', icon: <FaUsers /> },
   { href: '/admin-dashboard/products', label: 'Products', icon: <FaBox /> },
   { href: '/admin-dashboard/categories', label: 'Categories', icon: <FaTags /> },
+  { href: '/admin-dashboard/banners', label: 'Banners', icon: <FaImages /> },
+  { href: '/admin-dashboard/category-sliders', label: 'Category Sliders', icon: <FaPhotoVideo /> },
   { href: '/admin-dashboard/analytics', label: 'Analytics', icon: <FaChartBar /> },
   { href: '/admin-dashboard/settings', label: 'Settings', icon: <FaCog /> },
 ];
